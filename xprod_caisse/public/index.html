@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XPROD</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>XPROD caisse enregistrement</h1>
+        <!-- output list -->
+        <form  id="myForm" class="new-item-form">
+
+            <div class="field">
+                <label>Type :</label>
+                <select name="" id="type">
+                    <option value="invoice">Facture</option>
+                    <option value="payment">Paiement</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label>De / A :</label>
+                <input placeholder="Mr.X à Mme.Y" type="text" id="tofrom">
+            </div>
+
+            <div class="field">
+                <label>Détails :</label>
+                <input placeholder="CadeauX" type="text" id="details">
+            </div>
+
+            <div class="field">
+                <label>Montant (€) :</label>
+                <input placeholder="999$" type="number" id="amount">
+            </div>
+            <button>Ajouter</button>
+        </form>
+    </div>
+</body>
+
+</html>
